@@ -7,29 +7,29 @@
     <title>Salesforce Embedded Service Test</title>
 </head>
 <body>
-    <h1>Welcome to the Salesforce Embedded Service Test Page 1</h1>
+    <h1>Welcome to the Salesforce Embedded Service Test Page 11</h1>
     <p>This is a static webpage where you can test your Salesforce Embedded Service (Chat) integration.</p>
 
     <!-- Salesforce Embedded Service Code Snippet Placeholder -->
     <!-- Paste your Salesforce Embedded Service JavaScript snippet below -->
     <script type='text/javascript'>
-        function initEmbeddedMessaging() {
-            try {
-                embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
-    
-                embeddedservice_bootstrap.init(
-                    '00DKa000005ZgtP',
-                    'Service_Agent_ESD',
-                    'https://co1748951083503.my.site.com/ESWServiceAgentESD1752496730397',
-                    {
-                        scrt2URL: 'https://co1748951083503.my.salesforce-scrt.com'
-                    }
-                );
-            } catch (err) {
-                console.error('Error loading Embedded Messaging: ', err);
-            }
-        };
+	function initEmbeddedMessaging() {
+		try {
+			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+
+			embeddedservice_bootstrap.init(
+				'00DKa000005ZgtP',
+				'Website_ESD',
+				'https://co1748951083503.my.site.com/ESWWebsiteESD1752591100833',
+				{
+					scrt2URL: 'https://co1748951083503.my.salesforce-scrt.com'
+				}
+			);
+		} catch (err) {
+			console.error('Error loading Embedded Messaging: ', err);
+		}
+	};
     </script>
-    <script type='text/javascript' src='https://co1748951083503.my.site.com/ESWServiceAgentESD1752496730397/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>    
+    <script type='text/javascript' src='https://co1748951083503.my.site.com/ESWWebsiteESD1752591100833/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>    
 </body>
 </html>
